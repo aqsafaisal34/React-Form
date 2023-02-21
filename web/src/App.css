@@ -34,14 +34,18 @@ input{
   height: 40px;
   border-radius: 5px;
   border: none;
-  margin: 0 5px;
   padding: 0 4px;
   outline: none;
   
 }
 
-.input-box{
-  width: 60%;
+.input-box, #name-box{
+  width: 80%;
+}
+#name-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 #signup-btn, #login-btn{
   width: 60%;
@@ -55,15 +59,18 @@ input{
 color: inherit;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:940px){
   #name-box{
       text-align: center;
   }
-  #name-box input{
-      width: 60%;
-  }
   #firstname{
       margin-bottom: 30px;
+  }
+  input{
+    width: 60%;
+  }
+  #name-box input{
+    width: 100%;
   }
 }
 @media screen and (max-width:500px){
@@ -74,4 +81,5 @@ color: inherit;
   input{
       width: 65%;
   }
+
 }
