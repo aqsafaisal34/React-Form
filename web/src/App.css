@@ -1,8 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .form {
   background-color: #e3e3ff;
   color: white;
@@ -30,24 +31,29 @@ form {
   box-shadow: 0 0 5px 2px #8887c4;
 
 }
-input{
+
+input {
   height: 40px;
   border-radius: 5px;
   border: none;
   padding: 0 4px;
   outline: none;
-  
+
 }
 
-.input-box, #name-box{
+.input-box,
+#name-box {
   width: 80%;
 }
-#name-box{
+
+#name-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-#signup-btn, #login-btn{
+
+#signup-btn,
+#login-btn {
   width: 60%;
   border-radius: 15px;
   background-color: #b3b3c1;
@@ -55,36 +61,43 @@ input{
   font-size: 1.1rem;
   color: inherit;
 }
-#link{
-color: inherit;
+
+#link {
+  color: inherit;
 }
 
-@media screen and (max-width:940px){
-  #name-box{
-      text-align: center;
+@media screen and (max-width:940px) {
+  #name-box {
+    text-align: center;
   }
-  #firstname{
-      margin-bottom: 30px;
+
+  #firstname {
+    margin-bottom: 30px;
   }
-  input{
+
+  input {
     width: 60%;
   }
-  #name-box input{
+
+  #name-box input {
     width: 100%;
   }
 }
-@media screen and (max-width:500px){
-  form{
-      width:100%;
-      height:100vh
+
+@media screen and (max-width:500px) {
+  form {
+    width: 100%;
+    height: 100vh
   }
-  input{
-      width: 65%;
+
+  input {
+    width: 65%;
   }
 
 }
-@media screen and (min-width:1400px){
-  #name-box>input{
+
+@media screen and (min-width:1400px) {
+  #name-box>input {
     width: 250px;
   }
 
